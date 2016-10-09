@@ -103,8 +103,14 @@ if __name__ == '__main__':
 
 
 
+    #---------------------------------------------------------------------------
+    # !!!!!! create slave node using JNLP (java web start) !!!!!!
+    # slave connection command:
+    #     >yum install -y wget curl screen; 
+    #     >wget http://******:9999/jnlpJars/slave.jar ; 
+    #     >screen java -jar slave.jar -noReconnect -jnlpUrl http://*****:9999/computer/${slave_node_name}/slave-agent.jnlp
+    #---------------------------------------------------------------------------
 
-    # create slave
     # print j.create_node(name="slave41", num_executors=2, node_description="docker container node", remote_fs='/var/lib/jenkins', labels="testing webui", exclusive=False)
     # print j.create_node(name="slave42", num_executors=2, node_description="docker container node", remote_fs='/var/lib/jenkins', labels="testing webui", exclusive=True)
     # print j.create_node(name="slave43", num_executors=2, node_description="docker container node", remote_fs='/var/lib/jenkins1', labels="testing webui", exclusive=False)
