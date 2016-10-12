@@ -36,3 +36,20 @@ java -jar slave.jar -jnlpUrl -noReconnect  http://XX.XX.XX.XX/computer/node1/sla
 * https://github.com/jenkinsci/docker
 * http://www.open-open.com/lib/view/open1436922756240.html
 * http://www.open-open.com/lib/view/open1415669219461.html
+
+
+
+## JAVA8/7/6 Download
+* http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
+* http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html
+```
+curl -s http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html | grep jdk | grep linux-x64.tar.gz | awk -F'"' '{print $(NF-1)}' | grep -v jre
+```
+
+* Add JAVA_HOME into PATH
+```
+export JAVA_HOME=/usr/java/jdk1.7.0_80
+export CLASSPATH=$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib/rt.jar
+source /etc/profile
+
+```
