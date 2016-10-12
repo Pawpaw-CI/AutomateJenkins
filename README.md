@@ -8,7 +8,7 @@ Python scripts for automating jenkins operation: create/copy/delete/build jobs|f
 * http://pythonhosted.org/jenkinsapi/using_jenkinsapi.html
 * http://pythonhosted.org/jenkinsapi/build.html
 * https://github.com/pycontribs/jenkinsapi/blob/master/examples/how_to/query_a_build.py
-
+* JenkinsAPI https://my.oschina.net/sanpeterguo/blog/197931
 
 ## Jenkins Plugin download
 * http://updates.jenkins-ci.org/download/plugins/
@@ -39,6 +39,7 @@ java -jar slave.jar -jnlpUrl -noReconnect  http://XX.XX.XX.XX/computer/node1/sla
 
 
 ## curl automate jenkins
+* https://my.oschina.net/sanpeterguo/blog/197931
 * http://www.cnblogs.com/buaawp/p/5260996.html
 ```
 *. delete a job
