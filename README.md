@@ -26,3 +26,6 @@ wget http://XX.XX.XX.XX/jnlpJars/slave.jar
 java -jar slave.jar -jnlpUrl http://XX.XX.XX.XX/computer/node1/slave-agent.jnlp
 ```  
 
+## Dockerfile for Jenkins Setup
+* https://github.com/blacklabelops/jenkins/blob/master/Dockerfile
+
