@@ -26,7 +26,7 @@ Python scripts for automating jenkins operation: create/copy/delete/build jobs|f
 * https://hub.docker.com/r/jenkinsci/jnlp-slave/
 ```
 wget http://XX.XX.XX.XX/jnlpJars/slave.jar
-java -jar slave.jar -jnlpUrl http://XX.XX.XX.XX/computer/node1/slave-agent.jnlp
+java -jar slave.jar -jnlpUrl -noReconnect  http://XX.XX.XX.XX/computer/node1/slave-agent.jnlp
 ```
   
 
