@@ -38,6 +38,29 @@ java -jar slave.jar -jnlpUrl -noReconnect  http://XX.XX.XX.XX/computer/node1/sla
 * http://www.open-open.com/lib/view/open1415669219461.html
 
 
+## curl automate jenkins
+* http://www.cnblogs.com/buaawp/p/5260996.html
+```
+*. delete a job
+   curl -X POST http://localhost:8080/jenkins/job/jobfromcmd/doDelete
+
+*. query job's status
+   curl --silent ${JENKINS_SERVER}/job/JOB_NAME/lastBuild/api/json
+
+*. get job's build number
+   curl --silent ${JENKINS_SERVER}/job/JOB_NAME/lastBuild/buildNumber
+   curl --silent ${JENKINS_SERVER}/job/JOB_NAME/lastStableBuild/buildNumber
+
+*. create a job 
+   curl -X POST http://localhost:8080/jenkins/createItem?name=jobfromcmd --user admin:admin --data-binary "@config.xml" -H "Content-Type: text/xml”
+   curl --user ${UserName}:${PASSWORD} -o /dev/null --data disable JENKINS_URL/job/JOBNAME/disable
+   curl --user ${UserName}:${PASSWORD} -o /dev/null --data disable JENKINS_URL/job/JOBNAME/enable
+
+*. launch job build with parameter
+   http://localhost:8080/jenkins/job/commandTest/buildWithParameters -d param1=value1&param2=value
+
+```
+
 
 ## JAVA8/7/6 Download
 * http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
