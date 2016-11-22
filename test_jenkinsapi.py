@@ -92,6 +92,7 @@ if __name__ == '__main__':
 
 
     print j.get_job("senyang").get_last_build()
+    
 
 
     #copy job
